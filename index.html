@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Prova</title>
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <script src="phonegap.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.2.0/jquery.mobile-1.2.0.min.js">
+        </script>
+        <script src="my.js">
+        </script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1" data-ajax="false">
+            <div id="header" data-theme="c" data-role="header">
+                <h3 id="testata">
+                    Prova
+                </h3>
+            </div>
+            <div data-role="content">
+                <ul id="menu1" data-role="listview" data-divider-theme="b" data-inset="false">
+                    <li data-role="list-divider" role="heading">
+                        Menu
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" id="prova">
+                            Home
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page2" data-transition="fade">
+                            Chi siamo
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="corso.html" data-transition="flip">
+                            Link1
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page3" data-transition="pop" data-rel="dialog">
+                            Link2
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#popupBasic" data-rel="popup">
+                            Link3
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page2" data-transition="flow">
+                            Link4
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page2" data-transition="slidefade">
+                            Link5
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page2" data-transition="slideup">
+                            Link6
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page2" data-transition="slidedown">
+                            Link7
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            Contatti
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="footer" data-theme="c" data-role="footer" data-position="fixed">
+                <h3 id="footer">
+                    Contatti e altre info
+                </h3>
+            </div>
+            
+            <div data-role="popup" id="popupBasic">
+                <p>This is a completely basic popup, no options set.</p>
+            </div>
+        </div>
+        
+       <!-- Pagine -->
+        <div data-role="page" id="page2" data-add-back-btn="true" data-back-btn-text="indietro" data-back-btn-theme="e" data-title="Chi siamo">
+            <div id="header" data-theme="c" data-role="header">
+                <h3 id="testata">
+                    Testata
+                </h3>
+            </div>
+           
+            <div id="footer" data-theme="c" data-role="footer" data-position="fixed" >
+                <h3 id="footer">
+                    Footer
+                </h3>
+            </div>
+        </div>
+        
+        <div data-role="page" id="page3" data-add-back-btn="true" data-back-btn-text="indietro" data-back-btn-theme="e" data-title="Chi siamo" class="selector1" data-overlay-theme="c">
+            <div id="header" data-role="header" data-theme="c">
+                <h3 id="testata">
+                    Testata
+                </h3>
+            </div>
+           
+            <div id="footer" data-theme="c" data-role="footer" data-position="fixed" >
+                <h3 id="footer">
+                   Footer
+                </h3>
+            </div>
+        </div>
+        
+        <script>
+            //App custom javascript
+        </script>
+    </body>
+</html>
